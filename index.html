@@ -30,36 +30,54 @@
             </div>
             <div class="contact">
                 <h3>Contact us: </h3>
-                <form>
+                <form id="contactForm">
                     <div class="form-c">
                         <div class="left">
                             <p>
                                 <label>Name</label>
-                                <input type="text" name="name">
+                                <input type="text" name="name" id="name">
                             </p>
                             <p>
                                 <label>Email</label>
-                                <input type="text" name="email">
+                                <input type="text" name="email" id="email">
                             </p>
                             <p>
                                 <label>Phone Number</label>
-                                <input type="text" name="phone">
+                                <input type="text" name="phone" id="phone">
                             </p>
                         </div>
                         <div class="right">
                             <p>
                                 <label>Message</label>
-                                <textarea class="full" name="message"></textarea>
+                                <textarea class="full" name="message" id="message"></textarea>
                             </p>
 
                         </div>
                     </div>
-                    <button class="full">Submit</button>
+                    <button class="full" type="submit">Submit</button>
                 </form>
 
             </div>
         </div>
     </div>
+    <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.4.2/firebase-firestore.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyAicZRp8_yjyvHH5C-UGaTA8PHQtr9t-Dg",
+            authDomain: "form-26648.firebaseapp.com",
+            databaseURL: "https://form-26648.firebaseio.com",
+            projectId: "form-26648",
+            storageBucket: "",
+            messagingSenderId: "516745470212",
+            appId: "1:516745470212:web:b35fef2a40af39773a7051"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
     <script src="main.js"></script>
 </body>
 
